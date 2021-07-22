@@ -5,7 +5,7 @@ class Field extends React.Component {
   static contextType = Language; // results in Button.contextType = ...
 
   render() {
-    const text = this.context === 'english' ? 'Name' : 'Nom';
+    const text = this.context.language === 'english' ? 'Name' : 'Nom';
 
     return (
       <div className="card-body">
